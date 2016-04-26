@@ -1,0 +1,690 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td ,select{
+  margin: 0;
+  padding: 0;
+  font-size:12px;
+}
+.fl{
+    float:left;
+}
+.fr{float:right;}
+/*reset*/
+
+
+body{
+    width:1280px;
+}
+/*body*/
+
+
+.nav{
+    height:36px;
+    background-color:#228abf;
+    padding:10px 92px 9px 55px;
+    border-right:1px solid #4b9fcb;
+    position:relative;
+}
+.login{
+    padding-top:10px;
+}
+.login span{
+    font-family:微软雅黑;
+    line-height: 16px;
+    color:#fff;
+    padding-left: 4px;
+    font-weight:900;
+}
+
+.search{
+    padding-top:4px;
+}
+.search-text{
+    border-radius:14px;
+    height:20px;
+    width:312px;
+    display:block;
+    border: 1px solid rgba(34,137,191,0.5);
+    background:url(../img/nav-2.png) no-repeat #fff;
+    background-position:16px 5px;
+    padding:3px 10px 3px 48px;
+    color:#999a9a;
+    margin-right:21px;
+}
+/*navigation*/
+
+.ifo{
+    height:1209px;
+    width:258px;
+    border-right:1px solid #525561;
+    border-bottom:1px solid #6d707a;
+    border-left:1px solid #2a2e3d;
+    border-top:1px solid #2378a7;
+    background:#2a2e3d;
+    color:#586578;
+    position: relative;
+}
+
+.person{height:150px;
+    position:relative;
+    font-family:微软雅黑;
+}
+.main-info{
+    height: 99px;
+}
+.protrait{
+    display:inline-block;
+    margin-top:18px;
+    margin-left:45px;
+    clear:both;
+}
+.name{
+    width:138px;
+    height:99px;
+}
+.name span{
+    margin:18px 0 0 0;
+    height:57px;
+    line-height:57px;
+    color:#fff;
+}
+.collect{
+    width:72px;
+    height:28px;
+    border-right:2px solid #2f3343;
+    margin-left:45px;
+    margin-right:0;
+}
+.collect span{
+    display:block;
+    margin-right:15px;
+    height:12px;
+    line-height:12px;
+    text-align:center;
+}
+.fans{
+    width:80px;
+    height:28px;
+    margin-right:59px;
+}
+.fans span{
+    display:block;
+    height:12px;
+    line-height:12px;
+    text-align:center;
+}
+.side-nav{
+    font-family: 微软雅黑;
+}
+.p{
+    height:12px;
+    padding:18px 45px;
+    line-height:12px;
+}
+.p span{
+    display:inline-block;
+    height:12px;
+    padding-left:12px;
+}
+.changed{
+    background-color: #383d4e;
+    color:#fff;
+}
+.doc_pag{
+    padding-left:67px;
+    background-color: #383d4e;
+    height:30px;
+}
+.doc{
+    padding-left:100px;
+    background-color: #383d4e;
+    height:30px;
+}
+.doc_pag span, .doc span{
+    display:inline-block;
+    height:12px;
+    padding-left: 4px;
+}
+
+/*ifo*/
+
+
+
+.contain{
+    height:1209px;
+    width:1019px;
+    border-right:1px solid #fcfcfc;
+    border-bottom:1px solid #f1f1f0;
+    border-top:1px solid #4a9fca;
+    background:#ffffff;
+    position: relative;
+}
+.path{
+    height:30px;
+    line-height: 30px;
+    padding-left: 30px;
+    color:#b9babe;
+}
+.now{
+    color:#388ac1;
+}
+/*path*/
+
+
+.main-content{
+    background-color: #eeeeed;
+    width:890px;
+    height:1161px;
+    padding:19px 70px 0 60px;
+}
+.arg{
+    height:84px;
+    width:888px;
+    border:1px solid #e8e9e9;
+    background:#fff;
+    margin-bottom:9px;
+}
+.query{
+    padding:15px 0 0 30px;
+    overflow:hidden;
+    height:70px;
+    position:relative;
+}
+.query label{
+    margin-right:8px;
+    color:#b9babe;
+}
+.query div{
+    position:absolute;
+}
+
+#query-item-select{
+    height: 25px;
+    width:70px;
+}
+.buyer{
+    left:189px;
+}
+#buyer-select, #saler-select{
+    height:25px;
+    width:120px;
+}
+.saler{
+    left:189px;
+    top:45px;
+}
+.change-buy-sale{
+    left:349px;
+    top:22px;
+}
+.date{
+    left:407px;
+}
+#date-input{
+    height:21px;
+    width:117px;
+}
+.spend{
+    left:582px;
+}
+#spend-select{
+    height:25px;
+    width:70px;
+}
+.man{
+    left:407px;
+    top:45px;
+}
+#man-select{
+    height:25px;
+    width:67px;
+}
+.success{
+    left:532px;
+    top:45px;
+}
+#success-select{
+    height:25px;
+    width:120px;
+}
+.query .submit{
+    position:relative;
+    left:697px;
+    top:15px;
+}
+._submit{
+    display:inline-block;
+    width:51px;
+    height:26px;
+    background-color:#388ac1;
+    border-radius:2px;
+    color:#fff;
+    text-align: center;
+    line-height: 26px;
+}
+/*arg*/
+
+.time-li{
+    margin-bottom:22px;
+    overflow: hidden;
+}
+.time-li div{
+    height:63px;
+    background:#fff;
+    border-left:1px solid #e8e9e9;
+    border-top:1px solid #e8e9e9;
+}
+.pre, .aft{
+    width:19px;
+
+    line-height:63px;
+    padding-left: 10px;
+    font-size:20px;
+    color:#b9babe;
+}
+.his-query{
+    margin-left:5px;
+    width:111px;
+    padding:0 0 0 18px;
+}
+.his-query img{
+    margin-top:17px;
+}
+.his-query span{
+    margin-left:11px;
+    height:63px;
+    line-height: 63px;
+    display:inline-block;
+}
+.timer{
+    width:109px;
+    margin-left: 5px;
+}
+.timer .ock{
+    font-size:9px;
+    margin: 14px 0 2px 0;
+    text-align: center;
+    height: 9px;
+}
+.money{
+    text-align:center;
+    height:16px;
+    line-height: 21px;
+}
+.money .RMB{
+    font-size:9px;
+    color:#acacac;
+}
+.money .num{
+    font-size:17px;
+    color:#ec6500;
+}
+#focused{
+    height:61px;
+    border-top:3px solid #4389c9;
+}
+/*time&price*/
+
+
+.now-month{
+    height:12px;
+    line-height:12px;
+    margin-bottom: 6px;
+}
+
+.volume{
+    overflow: hidden;
+}
+.volume-itme{
+    height:70px;
+    width:197px;
+    border:1px 1px 1px 0 solid #e8e9e9;
+    background:#fff;
+    margin-bottom: 14px;
+    margin-right: 30px;
+}
+#volume-fir{
+    border-left:3px solid #44b29e;
+}
+#volume-fir .volume-block{
+    background-color: #44b29e;
+}
+#volume-sec{
+    border-left:3px solid #388ac1;
+}
+#volume-sec .volume-block{
+    background-color: #388ac1;
+}
+#volume-thi{
+    border-left:3px solid #d04b36;
+}
+#volume-thi .volume-block{
+    background-color: #d04b36;
+}
+#volume-for{
+    margin-right: 0px;
+    border-left:3px solid #e1cd46;
+}
+#volume-for .volume-block{
+    background-color: #e1cd46;
+}
+.volume-num{
+    margin:20px 0 0 8px;
+    position:absolute;
+    height: 9px;
+    line-height: 9px;
+}
+.volume-name{
+    margin:42px 0 0 8px;
+    position:absolute;
+    height: 9px;
+    line-height: 9px;
+    color:#b0b0b0;
+}
+.volume-block{
+    width:60px;
+    height:46px;
+    postion:absolute;
+    margin:12px 15px 0 0;
+}
+/*volume*/
+
+.project-table, .calendar, .project-form, .car-rank{
+    height:355px;
+    width:530px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    border:1px solid #cdd0d3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.project-form, .calendar{
+    width:350px; 
+}
+.title{
+    padding:15px 0 0 20px;
+    height:24px;
+    color:#cdd0d3;
+    background-color: #f4f6f7;
+    border-bottom: 1px solid #e6e8eb;
+}
+.project-table .table{
+    position: absolute;
+    overflow: hidden;
+    margin:12px 0 0 20px;
+    height:276px;
+    width:490px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.project-table .table ul{
+    display: block;
+    overflow: hidden;
+    list-style-type: none;
+    color:#535353;
+}
+.project-table .tab-label li{
+    width:86px;
+    height:27px;
+    background-color: #ededf0;
+    border-radius: 4px 4px 0 0;
+    margin-right:3px;
+    float:left;
+    text-align: center;
+    line-height: 27px;
+    border-bottom: 1px solid #bbbbbb;
+}
+.project-table .tab-label li[class="active"]{
+    background-color: #fff;
+    height:27px;
+    width:82px;
+    border:1px solid #bbbbbb;
+    border-bottom: none;
+    position: absolute;
+    z-index:2;
+}
+.project-table table{
+    font-size:11px;
+    border-collapse: collapse;
+    width:488px;
+    height:249px;
+    border:1px solid #bbbbbb;
+    position: absolute;
+    top:27px;
+    z-index:1;
+}
+.project-table tbody{
+    margin:28px 0 0 36px;
+    display: block;
+    color:#7d7d7e;
+}
+.project-table tr td{
+    border:1px solid #bbbbbb;
+    height:12px;
+    width:83px;
+    padding:10px 0 6px 17px;
+    font-size:11px;
+    line-height: 8px
+}
+/*project-table*/
+
+
+.project-form .form{
+    margin:17px 34px 0 34px;
+}
+.project-form .form>div{
+    clear:both;
+}
+.project-form .form h3{
+    height:12px;
+    line-height: 12px;
+    color:#cccbcb;
+    margin-left:17px;
+    font-weight:normal;
+}
+.project-form .form h4{
+    height:26px;
+    line-height: 26px;
+    margin-left:17px;
+    font-weight:normal;
+}
+.project-form .form .project-price{
+    height:43px;
+    width:94px;
+    border:1px solid #e7e8e8;
+    border-left:none;
+}
+.project-form .form .project-price div,
+.project-form .form .project-resp div{
+    padding:4px 0 5px 15px;
+    color:#c3c2c2;
+}
+.project-form .form .project-price .num,
+.project-form .form .project-resp .per{
+    font-size:9px;
+    color:#000;
+}
+.project-form .form .project-resp{
+    height:43px;
+    width:187px;
+    border-top:1px solid #e7e8e8;
+    border-bottom: 1px solid #e7e8e8;  
+}
+.project-form .form .des{
+    height:145px;
+}
+.project-form .form .describe{
+    display: inline-block;
+    height:20px;
+    line-height: 20px;
+    margin-left: 15px;
+    color:#c3c2c2;
+}
+.project-form .form .describe-contain{
+    margin:3px 0 0 16px;
+}
+.project-form .footer{
+    height:67px;
+    border-top:1px solid #e7e8e8;
+    position:relative;
+}
+.project-form .footer input{
+    position:absolute;
+    margin:11px 8px 0 3px;
+    background-color:#c3c2c2;
+}
+.project-form .footer label{
+    position:absolute;
+    margin: 10px 0 0 24px;
+    color:#c3c2c2;
+}
+.project-form .footer div{
+    float:right;
+}
+/*project-form*/
+
+.calendar .contain{
+    margin:10px 22px 0 22px;
+    width:308px;
+    border:none;
+    font-size:12px;
+}
+.calendar .contain .date{
+    border:1px solid #cacbcb;
+    height:22px;
+}
+#year{
+    width:65px;
+    padding-left: 5px;
+}
+#month{
+    width:85px;
+    padding-left: 25px;
+}
+#log-date{
+    width:75px;
+}
+.calendar .contain .return{
+    width:62px;
+    height:20px;
+    margin-left:1px;
+    text-align: center;
+}
+.calendar .contain table{
+    width:100%;
+    text-align: center;
+    border-top:1px solid #bbbbbb;
+    margin-top:10px;
+}
+.calendar .contain thead{
+    border-top: 1px solid #a9cfec;
+    border-bottom: 1px solid #e1e1e2;
+    height:30px;
+    width:306px;
+}
+.calendar .contain thead td{
+    height:30px;
+    width:44px;
+
+}
+.calendar .contain tbody td{
+    height:39px;
+}
+.calendar tbody tr td:nth-child(6) :first-child,
+.calendar tbody tr td:nth-child(7) :first-child{
+    color:#cd3539;
+}
+.calendar tbody .special div:nth-child(2){
+    color:#cd3539;
+}
+.calendar tbody .focus{
+    border:1px solid #f6c62b;
+}
+/*calendar*/
+
+
+.car-rank table{
+    margin:18px 0 0 40px;
+    text-align: center;
+    border-collapse: collapse;
+    border:1px solid #e1e1e2;
+}
+.car-rank table td{
+    height:24px;
+    border:1px solid #e1e1e2;
+}
+.car-rank thead td:nth-child(3){
+    float:left;
+    border:0px;
+    line-height: 24px;
+    margin-left: 29px;
+}
+.car-rank tbody .num{
+    margin-left: 34px;
+    float: left;
+}
+.car-rank tbody .pic{
+    display: block;
+    width:167px;
+    height:4px;
+    float:right;
+    margin:6px 19px 0 0 ;
+    background:#dddddd;
+}
+.car-rank tbody .fir{
+    background:#ec6d51;
+}
+.car-rank tbody .sec{
+    background:#ef804f;
+}
+.car-rank tbody .thi{
+    background:#f19f4f;
+}
+.car-rank tbody .else{
+    background:#7ecaf0;
+}
+.car-rank tbody tr .pic div{
+    height: 4px;
+}
+.car-rank tbody tr:nth-child(1) .pic div{
+    width:140px;
+}
+.car-rank tbody tr:nth-child(2) .pic div{
+    width:121px;
+}
+.car-rank tbody tr:nth-child(3) .pic div{
+    width:104px;
+}
+.car-rank tbody tr:nth-child(4) .pic div{
+    width:97px;
+}
+.car-rank tbody tr:nth-child(5) .pic div{
+    width:86px;
+}
+.car-rank tbody tr:nth-child(6) .pic div{
+    width:79px;
+}
+.car-rank tbody tr:nth-child(7) .pic div{
+    width:74px;
+}
+.car-rank tbody tr:nth-child(8) .pic div{
+    width:64px;
+}
+.car-rank tbody tr:nth-child(9) .pic div{
+    width:59px;
+}
+.car-rank tbody tr:nth-child(10) .pic div{
+    width:54px;
+}
+.car-rank tbody tr td:first-child{
+    width:66px;
+}
+.car-rank tbody tr td:nth-child(2){
+    width:90px;
+}
+.car-rank tbody tr td:nth-child(3){
+    width:290px;
+}
+.car-rank table tr:hover{
+    background-color: #f4f5f7;
+    cursor:pointer;
+}
+/*car-rank*/
