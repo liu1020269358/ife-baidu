@@ -1,0 +1,110 @@
+#input{
+    width:400px;
+    float:left;
+    margin-right: 20px;
+    border:3px solid gray;
+    padding:5px 5px 10px 5px;
+}
+#input>h1, #show>h1{
+    width: 100%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+}
+#input>div{
+    border:2px solid gray;
+    margin:7px 0 14px 0;
+    padding:3px;
+}
+.divHead{
+    margin:20px 0 5px 0;
+    display: block;
+}
+#basic>div>span, #special>div>div>span{
+    display: inline-block;
+    width:150px;
+}
+#basic>div, #special>div>div{
+    margin: 5px 0 ;
+}
+#special>div{
+    margin-bottom: 10px;
+    border:1px solid gray;
+    padding:3px;
+}
+#optionsDiv{
+    display: none;
+}
+#mustHaveDiv, #lengthLimitDiv, #onlyNumberDiv, #emailDiv{
+    display: block;
+}
+#input bottom{
+    width:100px;
+    height:40px;
+    display: inline-block;
+    border:1px solid gray;
+    background-color: #388ac1;
+    color:white;
+    font-size:30px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    margin-left:150px;
+
+}
+#input bottom:hover{
+    cursor:pointer;
+}
+#show{
+    float:left;
+    border:3px solid gray;
+    padding:5px 50px 10px 50px;
+    position: relative;
+}
+#show-form{
+    text-align: center;
+}
+#show-form>div{
+    margin:20px 10px;  
+    width:600px;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+}
+#show-form>div>span{
+    
+    float:right;
+    width: 200px;
+    height: 100%
+    color:red;
+}
+#show-form>div>label{
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 18px;
+}
+#show-form>div>div{
+    width:200px;
+    float:left;
+}
+#show-form>div>div>label{
+    margin-left:15px 
+}
+#show .btn{
+
+    display: inline-block;
+    width: 100px;
+    padding: 5px 10px;
+    border:1px solid gray;
+    background-color: #388ac1;
+    color:white;
+    font-size:30px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    margin-left:220px;
+    margin-top:30px;
+}
+
+

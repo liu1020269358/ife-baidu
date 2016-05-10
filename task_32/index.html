@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="javascript/javascript.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="input">
+        <h1>表单生成器</h1>
+        
+        <div id="basic">
+            <span class="divHead">基本配置</span>
+            <div>
+                <span>标签: </span>
+                <input type="text" id = "label-input">
+            </div>
+            <div id="successDiv">
+                <span>验证成功的提示: </span>
+                <input type="text" id="success">
+            </div>
+            <div>
+                <span>选择控件</span>
+                <select name="choose widget" class="widget" id="type-select">
+                    <option value="text" selected="selected">输入框</option>
+                    <option value="radio">单选框</option>
+                    <option value="checkbox">复选框</option>
+                    <option value="password">密码输入框</option>
+                    <option value="submit">提交按钮</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="special">
+            <span class="divHead">特殊配置</span>
+            <div id="optionsDiv">
+                <div><span>输入生成的选项，用逗号分隔（中英文都可以）</span><input type="text" id="options"></div>
+            </div>
+            <div id="mustHaveDiv">
+                <label for="mustHave"><input type="radio" id="mustHave" checked=true>必填</label>
+                <label for="notMust"><input type="radio" id="notMust" >非必填</label>
+                <div><span>验证失败的提示: </span><input type="text" id="must-fail"></div>
+            </div>
+            <div id="lengthLimitDiv">
+                <label for="lengthLimit"><input type="radio" id="lengthLimit" checked=true>有长度限制</label>
+                <label for="notLimit"><input type="radio" id="notLimit">无长度限制</label>
+                <div><span>验证失败的提示: </span><input type="text" id="limit-fail"></div>
+                <div><span>最大长度: </span><input type="text" id="length-max"></div>
+                <div><span>最小长度: </span><input type="text" id="length-min"></div>
+            </div>
+            <div id="onlyNumberDiv">
+                <label for="onlyNumber"><input type="radio" id="onlyNumber" checked=true>只能是数字</label>
+                <label for="notNumber"><input type="radio" id="notNumber">非只能是数字</label>
+                <div><span>验证失败的提示: </span><input type="text" id="number-fail"></div>
+            </div>
+            <div id="emailDiv">
+                <label for="email"><input type="radio" id="email" checked=true>邮箱格式</label>
+                <label for="notEmail"><input type="radio" id="notEmail">非邮箱格式</label>
+                <div><span>验证失败的提示: </span><input type="text" id="email-fail"></div>
+            </div>
+        </div>
+        <bottom id="add">添加</bottom>
+    </div>
+    <div id="show">
+        <h1>已生成的表单</h1>
+        <form id="show-form">
+            
+        </form>
+    </div>
+</body>
+</html>
