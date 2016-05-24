@@ -1,0 +1,159 @@
+body, div{
+    margin:0;
+    padding: 0;
+}
+#container{
+    width: 500px;
+    position: relative;
+    margin:0 auto;
+}
+.album{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/*一张图片*/
+.album-1 .main{
+    position: absolute;
+    background: url("./../image/img0.png");
+    width: 100%;
+    height: 100%;
+}
+/*两张图片*/
+.album-2 .left{
+    position: absolute;
+    background: url("./../image/img1.png");
+    width:67%;
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 50% 0);
+}
+.album-2 .right{
+    float:right;
+    background: url("./../image/img2.png");
+    width: 67%;
+    height: 100%;
+}
+/*三张图片*/
+.album-3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.album-3 .main{
+    background: url("./../image/img3.png");
+    width:60%;
+    height: 100%;
+}
+.album-3 .rt{
+    background: url("./../image/img4.png");
+    height: 50%;
+    width: 40%;
+}
+.album-3 .rb{
+    background: url("./../image/img5.png");
+    height: 50%;
+    width: 40%;
+}
+/*四张图片*/
+.album-4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.album-4 .lt{
+    background: url("./../image/img0.png");
+    height: 50%;
+    width: 50%;
+}
+.album-4 .rt{
+    background: url("./../image/img1.png");
+    height: 50%;
+    width: 50%;
+}
+.album-4 .lb{
+    background: url("./../image/img2.png");
+    height: 50%;
+    width: 50%;
+}
+.album-4 .rb{
+    background: url("./../image/img3.png");
+    height: 50%;
+    width: 50%;
+}
+/*五张图片*/
+.album-5{
+    position: relative;
+}
+.album-5 .main{
+    background: url("./../image/img0.png");
+    width: 66.7%;
+    height: 66.7%;
+    float: left;
+
+}
+.album-5 .rt{
+    background: url("./../image/img1.png");
+    width: 33.3%;
+    height: 41.6%;
+    float: right;
+}
+.album-5 .lb{
+    background: url("./../image/img2.png");
+    width:33.4%;
+    height: 33.4%;
+    float: left;
+}
+.album-5 .mb{
+    background: url("./../image/img3.png");
+    width: 33.3%;
+    height: 33.4%;
+    float: right;
+}
+.album-5 .rb{
+    background: url("./../image/img4.png");
+    width: 33.3%;
+    height: 58.5%;
+    float: right;
+}
+/*六张图片*/
+.album-6 .main{
+    background: url("./../image/img0.png");
+    width: 66.7%;
+    height: 66.7%;
+    float: left;
+}
+.album-6 .rt{
+    background: url("./../image/img1.png");
+    width: 33.3%;
+    height: 33.3%;
+    float: right;
+}
+.album-6 .lb{
+    background: url("./../image/img2.png");
+    width:33.4%;
+    height: 33.4%;
+    float: left;
+}
+.album-6 .mb{
+    background: url("./../image/img3.png");
+    width: 33.3%;
+    height: 33.4%;
+    float: right;
+}
+.album-6 .rm{
+    background: url("./../image/img5.png");
+    width: 33.3%;
+    height: 33.4%;
+    float: right;
+}
+.album-6 .rb{
+    background: url("./../image/img4.png");
+    width: 33.3%;
+    height: 33.4%;
+    float: right;
+}
+
+.album>.img{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
