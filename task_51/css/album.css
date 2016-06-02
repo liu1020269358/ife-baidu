@@ -1,0 +1,143 @@
+/*拼图布局*/
+
+/*puzzle为包裹图片的div
+在拼图布局中应隐藏
+用background-img来显示图片*/
+.puzzle-img>a{
+    display: none;
+}
+.puzzle-img{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/*一张图片*/
+.puzzle_1>.pic_0{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/*两张图片*/
+.puzzle_2>.pic_0{
+    position: absolute;
+    width:67%;
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 50% 0);
+}
+.puzzle_2>.pic_1{
+    float:right;
+    width: 67%;
+    height: 100%;
+}
+/*三张图片*/
+.puzzle_3>.pic_0{
+    width:60%;
+    height: 100%;
+    float: left;
+}
+.puzzle_3>.pic_1{
+    height: 50%;
+    width: 40%;
+    float: right;
+}
+.puzzle_3>.pic_2{
+    height: 50%;
+    width: 40%;
+    float: right;
+}
+/*四张图片*/
+.puzzle_4>.pic_0{
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+.puzzle_4>.pic_1{
+    height: 50%;
+    width: 50%;
+    float: right;
+}
+.puzzle_4>.pic_2{
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+.puzzle_4>.pic_3{
+    height: 50%;
+    width: 50%;
+    float: right;
+}
+/*五张图片*/
+.puzzle_5>.pic_0{
+    width: 66.7%;
+    height: 66.7%;
+    float: left;
+
+}
+.puzzle_5>.pic_1{
+    width: 33.3%;
+    height: 41.6%;
+    float: right;
+}
+.puzzle_5>.pic_2{
+    width: 33.3%;
+    height: 58.5%;
+    float: right;
+}
+.puzzle_5>.pic_3{
+    width: 33.3%;
+    height: 33.4%;
+    float: right;
+}
+.puzzle_5>.pic_4{ 
+    width:33.4%;
+    height: 33.4%;
+    float: left;
+}
+/*六张图片*/
+.puzzle_6>.pic_0{
+    width: 66.7%;
+    height: 66.7%;
+    float: left;
+}
+.puzzle_6>.pic_1{
+    width: 33.3%;
+    height: 33.3%;
+    float: right;
+}
+.puzzle_6>.pic_2{
+    width: 33.3%;
+    height: 33.4%;
+    float: right;
+}
+.puzzle_6>.pic_3{
+    width: 33.3%;
+    height: 33.4%;
+    float: right;
+}
+.puzzle_6>.pic_4{
+    width: 33.3%;
+    height: 33.4%;
+    float: right;
+}
+.puzzle_6>.pic_5{
+    width:33.4%;
+    height: 33.4%;
+    float: left;
+}
+
+/*瀑布流布局*/
+#container{
+    overflow: hidden;
+}
+.column{
+    float:left;
+}
+.column a{
+    display: block;
+}
+/*木桶布局*/
+.row_img{
+    overflow: hidden;
+}
+.row_img a{
+    display: inline-block;
+}

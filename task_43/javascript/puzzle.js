@@ -1,6 +1,11 @@
 window.onload = function(){
     init()
+
 }
+
+
+
+
 
 function init(){
     a = $('.album');

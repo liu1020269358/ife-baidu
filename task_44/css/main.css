@@ -1,0 +1,20 @@
+body{
+    position: relative;
+    margin:0;
+}
+
+#main{
+    overflow: hidden;
+
+/*    display: inline-block !important;
+    display: inline;*/
+
+}
+
+.column{
+    float: left;
+}
+.column a{
+    display: block;
+    margin: 15px 0;
+}
