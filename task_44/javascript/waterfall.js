@@ -11,14 +11,13 @@ $(document).on("ready", function(){
 
 $(window).on("load",function(){
     init();
-    window.onscroll = function(){
+    $(window).on("scroll", function(){
         for(var i=0; i<config.colNum; i++){
             var eleColumn = ($("#img_box_" + i));
             appendCheck(eleColumn);
-            appendCheck(eleColumn);
-            appendCheck(eleColumn);
         }
-    }
+    })
+
 
 
     

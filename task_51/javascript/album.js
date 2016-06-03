@@ -48,7 +48,7 @@
         var aEle = $("<a></a>").appendTo(parEle);
         var imgEle = $("<img/>").appendTo(aEle);
         if (typeof option != "undefined"){
-            aEle.css("margin", function(){return option.gutterX+"px "+option.gutterY+"px"})
+            aEle.css("margin", function(){return option.gutterX+"px "+option.gutterY/2+"px"})
         }
         
         imgEle.attr("src",url);
@@ -63,13 +63,13 @@
             temNum += 1;
             temWidth = getTemWidth(temNum, imgHeight, imgWidth, option.barrelLow);
             temSum = temWidth.sum;
-            temConWidth = option.containerWidth - 2*temNum*option.gutterX;         
+            temConWidth = option.containerWidth - temNum*option.gutterX;         
         }
         
         temNum -= 1;
         temWidth = getTemWidth(temNum, imgHeight, imgWidth, option.barrelLow);
         temSum = temWidth.sum;
-        temConWidth = option.containerWidth - 2*temNum*option.gutterX;
+        temConWidth = option.containerWidth - temNum*option.gutterX;
 
         var showHight = getShowHight(temConWidth, temSum, option.barrelLow);
         var aDiv = $("<div></div>").appendTo($("#container"));
@@ -259,9 +259,12 @@
         if(typeof y == "undefined"){
             y = x;
         }
+        if(this.option.LAYOUT == 3){
+            y = y/2;
+        }
         var container = this.getContainer();
         var imgBox=container.find("a");
-        imgBox.css("margin", function(){return y+"px "+x+"px"})
+        imgBox.css("margin", function(){return y+"px "+x/2+"px"})
     }
 
     /**
@@ -386,7 +389,6 @@
         var imgArr = [];
         var option = this.option;
         var container = this.getContainer();
-        var setGutter = this.setGutter;
 
         container.addClass("barrel");
         for(i of this.baseImage){
@@ -406,7 +408,7 @@
                 re = loadImg(option, imgHeight, imgWidth, imgArr);
             }
             container.find("a").css("margin", function(){
-                return option.gutterY + "px " + option.gutterX+"px"
+                return option.gutterY/2 + "px " + option.gutterX/2+"px"
             })
             imgArr = [];                              
         }   

@@ -2,9 +2,9 @@ window.onload = function(){
     //点击add按钮       
     var _add = document.getElementById("add");
     _add.onclick = function(){
-        label = document.getElementById("label-input").value;
-        type = document.getElementById("type-select").value;
-        success = document.getElementById("success").value;
+        var label = document.getElementById("label-input").value;
+        var type = document.getElementById("type-select").value;
+        var success = document.getElementById("success").value;
         switch(type){
             //如果为输入框控件
             case 'text':
@@ -76,12 +76,12 @@ window.onload = function(){
     };
 
     //某些选项产生不同的配置界面
-    success = document.getElementById("successDiv");
-    optionsDiv = document.getElementById("optionsDiv");
-    mustHaveDiv = document.getElementById("mustHaveDiv");
-    lengthLimitDiv = document.getElementById("lengthLimitDiv");
-    onlyNumberDiv = document.getElementById("onlyNumberDiv");
-    emailDiv = document.getElementById("emailDiv");
+    var success = document.getElementById("successDiv");
+    var optionsDiv = document.getElementById("optionsDiv");
+    var mustHaveDiv = document.getElementById("mustHaveDiv");
+    var lengthLimitDiv = document.getElementById("lengthLimitDiv");
+    var onlyNumberDiv = document.getElementById("onlyNumberDiv");
+    var emailDiv = document.getElementById("emailDiv");
 
     document.getElementById("type-select").onchange = function(){
         type = document.getElementById("type-select").value;
@@ -92,7 +92,7 @@ window.onload = function(){
                 lengthLimitDiv.style.display = "block";
                 onlyNumberDiv.style.display = "block";
                 emailDiv.style.display = "block";
-                success.style.display = "block";
+                success.style.visibility = "visible";
                 break;
             case 'radio':
                 optionsDiv.style.display = "block";
@@ -100,7 +100,7 @@ window.onload = function(){
                 lengthLimitDiv.style.display = "none";
                 onlyNumberDiv.style.display = "none";
                 emailDiv.style.display = "none";
-                success.style.display = "block";
+                success.style.visibility = "visible";
                 break;
             case 'checkbox':
                 optionsDiv.style.display = "block";
@@ -108,7 +108,7 @@ window.onload = function(){
                 lengthLimitDiv.style.display = "none";
                 onlyNumberDiv.style.display = "none";
                 emailDiv.style.display = "none";
-                success.style.display = "block";
+                success.style.visibility = "visible";
                 break; 
             case 'password': 
                 optionsDiv.style.display = "none";
@@ -116,7 +116,7 @@ window.onload = function(){
                 lengthLimitDiv.style.display = "block";
                 onlyNumberDiv.style.display = "none";
                 emailDiv.style.display = "none";
-                success.style.display = "block";
+                success.style.visibility = "visible";
                 break;
             case 'submit':
                 optionsDiv.style.display = "none";
@@ -124,7 +124,8 @@ window.onload = function(){
                 lengthLimitDiv.style.display = "none";
                 onlyNumberDiv.style.display = "none";
                 emailDiv.style.display = "none";
-                success.style.display = "none";
+                success.style.visibility = "hidden";
+                break;        
         }
     }
 

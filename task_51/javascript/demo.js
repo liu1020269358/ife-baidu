@@ -13,9 +13,10 @@ $(window).on('load', function(){
     }
     Album.setImage(image, option);
     
-    for(i in [1,2,3,4,5,6]){
+    for(var i=1; i<7; i++){
         puzzledemo(i)
     }
+
 
     $("#waterfall").on("click", function(){
         var image = createImgArr(createIArr(100));
