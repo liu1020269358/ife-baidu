@@ -262,7 +262,12 @@ function addPassword(label, success, mustJS, limitJS){
 function addSubmitBtn(label){
     var parent = document.getElementById('show-form');
     var box = document.createElement('div');
-    box.innerHTML = "<bottom class='btn'><span>"+label+"</span></bottom>";
+    var btn = document.createElement('bottom')
+    btn.setAttribute('class', 'btn');
+    btn.innerHTML = "<span>"+label+"</span>";
+    btn.onclick = function(){alert('已提交表单')}
+    console.log(btn);
+    box.appendChild(btn);
     parent.appendChild(box);
 }
 

@@ -11,11 +11,6 @@ pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td ,selec
 /*reset*/
 
 
-body{
-    width:1280px;
-}
-/*body*/
-
 
 .nav{
     height:36px;
@@ -52,13 +47,14 @@ body{
 }
 /*navigation*/
 
+.main{
+    width: 1280px;
+}
 .ifo{
     height:1209px;
     width:258px;
     border-right:1px solid #525561;
     border-bottom:1px solid #6d707a;
-    border-left:1px solid #2a2e3d;
-    border-top:1px solid #2378a7;
     background:#2a2e3d;
     color:#586578;
     position: relative;
@@ -154,7 +150,6 @@ body{
     width:1019px;
     border-right:1px solid #fcfcfc;
     border-bottom:1px solid #f1f1f0;
-    border-top:1px solid #4a9fca;
     background:#ffffff;
     position: relative;
 }

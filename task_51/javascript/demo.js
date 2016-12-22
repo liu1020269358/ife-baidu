@@ -33,7 +33,7 @@ $(window).on('load', function(){
     })
 
     $("#barrel").on("click", function(){
-        var image = createImgArr(createIArr(30))
+        var image = createImgArr(createBarrelNumArr())
         var option = {
             layout: 3,
             containerWidth: 1100, 
@@ -64,10 +64,18 @@ function createIArr(num){
     return i;
 }
 
+function createBarrelNumArr(){
+    var i = [];
+    for(var j=0; j<30; j++){
+        i.push(j);
+    }
+    return i;
+}
+
 function createPuzzleImg(i){
     var img = [];
     for(var n=0; n<i; n++){
-        var aImg = "./image/img1"+n+".png";
+        var aImg = "./image/img3"+n+".png";
         img.push(aImg);
     }  
     return img;

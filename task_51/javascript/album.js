@@ -398,6 +398,7 @@
         }
         var last = imgArr.length - 1;
         imgArr[last].onload = function(){
+
             container.html("");
             imgArr.map(function(x){
                 imgWidth.push(x.width);
